@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d8e2ff",
+                    "on-tertiary-container": "#0e0200",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#004493",
+                    "on-secondary-container": "#3d5481",
+                    "primary-container": "#1a73e8",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-dim": "#d8dadc",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#c55500",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#2e4673",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eceef0",
+                    "surface-tint": "#005bc0",
+                    "inverse-primary": "#adc7ff",
+                    "outline": "#727785",
+                    "tertiary": "#9e4300",
+                    "on-primary-container": "#ffffff",
+                    "on-tertiary-fixed": "#341100",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed-variant": "#783100",
+                    "secondary-container": "#b2c9fe",
+                    "on-primary": "#ffffff",
+                    "primary": "#005bbf",
+                    "outline-variant": "#c1c6d6",
+                    "background": "#f7f9fb",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#afc7fb",
+                    "surface": "#f7f9fb",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#414754",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#adc7ff",
+                    "tertiary-fixed-dim": "#ffb691",
+                    "on-background": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error": "#ffffff",
+                    "secondary": "#475e8c",
+                    "tertiary-fixed": "#ffdbcb",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed": "#001a41",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto font-manrope antialiased">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-blue-800 dark:text-blue-300">Azure Horizon</span>
+<div class="hidden md:flex items-center space-y-0 space-x-6">
+<a class="text-blue-700 dark:text-blue-400 font-semibold border-b-2 border-blue-600 transition-colors" href="#">Explore</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">How it Works</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">List Your Venue</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-all">search</button>
+<button class="px-6 py-2 bg-primary-container text-on-primary-container font-semibold rounded-lg active:scale-95 duration-200 transition-all shadow-sm">Login</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[640px] flex items-center justify-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="luxury grand ballroom with crystal chandeliers, elegant floral arrangements, and soft blue atmospheric lighting in a high-end hotel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXVuysBWVNVEWQRqggqtYUlDU946ter5ZutClGkCN8iiATnsGat9S0TrYZ3KFjoIL61dqW9Up2nAUOfxnztGPYY8R9cRDQM5dczk2lqbl5cVyzOEp1scvY-dNuZ20wBsJ9atHoxhTfg8VFt3jsOMidpN7j4VFFu8b7ScMicaDcs25g-UtHk180LAdiiJ-TzFhWBh1RSrZfAdBayUyWFQBykXbqljhNuyOM61U34jUOPf3qlHcUVgSfsU2uDIuApgpnIsvyGIpeGi4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-primary-fixed/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-5xl w-full">
+<div class="mb-10 text-white max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4 drop-shadow-md">Find the perfect space for your next horizon.</h1>
+<p class="text-xl font-medium opacity-90">Curated venues for weddings, corporate events, and private gatherings.</p>
+</div>
+<!-- Floating Search Hub -->
+<div class="bg-surface-container-lowest p-2 md:p-4 rounded-xl shadow-[0px_12px_32px_rgba(25,28,30,0.15)] flex flex-col md:flex-row items-center gap-2">
+<div class="w-full md:flex-1 grid grid-cols-1 md:grid-cols-4 gap-2">
+<div class="flex flex-col px-4 py-2 hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer group">
+<span class="text-[10px] font-bold text-primary tracking-wider uppercase">Venue Type</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-sm">home_work</span>
+<span class="text-sm font-semibold text-on-surface">Any Venue</span>
+</div>
+</div>
+<div class="flex flex-col px-4 py-2 hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer border-l border-outline-variant/20">
+<span class="text-[10px] font-bold text-primary tracking-wider uppercase">Location</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-sm">location_on</span>
+<span class="text-sm font-semibold text-on-surface">Near Me</span>
+</div>
+</div>
+<div class="flex flex-col px-4 py-2 hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer border-l border-outline-variant/20">
+<span class="text-[10px] font-bold text-primary tracking-wider uppercase">Date &amp; Pax</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-sm">event</span>
+<span class="text-sm font-semibold text-on-surface">Add Guests</span>
+</div>
+</div>
+<div class="flex flex-col px-4 py-2 hover:bg-surface-container-low rounded-lg transition-colors cursor-pointer border-l border-outline-variant/20">
+<span class="text-[10px] font-bold text-primary tracking-wider uppercase">Price Range</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-sm">payments</span>
+<span class="text-sm font-semibold text-on-surface">Budget</span>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto h-14 px-8 bg-primary text-white font-bold rounded-lg flex items-center justify-center gap-2 hover:shadow-lg transition-all active:scale-95">
+<span class="material-symbols-outlined">search</span>
+                        Search
+                    </button>
+</div>
+</div>
+</section>
+<!-- Popular Categories - Bento Grid Style -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="flex items-end justify-between mb-10">
+<div>
+<h2 class="text-3xl font-bold text-on-surface tracking-tight">Popular Categories</h2>
+<p class="text-on-surface-variant mt-2">Explore venues tailored to your specific event needs.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[500px]">
+<div class="md:col-span-8 relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="magnificent outdoor garden wedding reception with long tables, white linens, and overhead fairy lights at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5wuM0xf-sCnXl3ZfXprwZhq4jurYfddGvcDMWuGhwwlnMwxb21TmvP-JA4KChhDJqbFGQgy4HXjIrzL-1-DfWQdUHr8rqfzRUAl5LAECDz_HJl7PbL9m_oVweqIt6xvmaFVAOTBI8REuxYcN64HnpUykurhQTYPwlza0Fhf2O3v91MDL65QP7pCMLAZ2LX95uNAEB0z67reEaIWPZUlt-qtozEMQMuqy8nwo4x1101hNuV6c5T_DkrRClKUHHV7FuEyjXGADosYU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-2xl font-bold text-white">Weddings</h3>
+<p class="text-white/80 text-sm mt-1">Stunning estates, ballrooms, and garden spaces.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="modern corporate boardroom with large glass windows, ergonomic chairs, and advanced presentation technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIqHDlZWSoRarcUQKHMmnGksabdm3dZ_MjG5EheT6pItxtBYc8f4sZZq5JmSNCdThEOUAddYs-QYPVACAxLbmIy_7vsF4VFTyEym1TZqPefXam3oVi4M59qLYuUAZn3btIdmQZe8yp6zNQoxPhWT1doFlr1d3tKCJuPguB6xyc9ybUwgFLuHDN4pDAwcocI13pS8AeDdKY6HIyNuDn0eNpH28pANFsPWFSOgx7obYNaVuT4UFxC_pPbuecjh61_DqktbGP08aeBxI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-2xl font-bold text-white">Corporate</h3>
+<p class="text-white/80 text-sm mt-1">Productive meeting rooms and conferences.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="vibrant indoor party venue with colorful ambient lighting, modern lounge furniture, and a polished dance floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVkHaY7Wcm8zNHcA9ry2DZBMn9nC59bMRcklbqUKgRcrV0iVakepvqhNXql6FPwIdA5le-t4NbQ2J9DMh_APrfF8DACe_Nloo4xFb_vaZrPTsza26CIC-mTHIiITC7yMqu0Et9-J7W5iwCr-lT8mylWjPInF2NTYPyMU4bTMVG4XjeNsHL2US23hgwKxMjUvB2hY5w3wd58ASZP5U1LV6HBQ7yfnBR9du1M8Z8NP_sysHME53acJdrunU0_Pdd89otC2_NbhGfPNw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-2xl font-bold text-white">Party</h3>
+<p class="text-white/80 text-sm mt-1">Clubs, rooftops, and creative lofts.</p>
+</div>
+</div>
+<div class="md:col-span-8 relative rounded-xl overflow-hidden group cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="sophisticated cocktail lounge with velvet seating, brass accents, and dimly lit atmospheric mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbSk3dYm9rmrb7uNQjKuI5UwwJdijO_Qr3LBt2AnAWdquzjP23wE2Z1DBUtJOwlmhdiNAL2CIOo6dTvnr3iNHneEoZ97pt_7OA8aAe0n8xSzA3mnFIlCprfCZc3ez80Pa9CK7JjvMZA95LkA7fVg4U67GgDZUNdw4S0SS3T21B8jgcqwlhvpshBKBVORW0vpT9DD4W76PefTxtHd-ctkWISMI6o0K0BNAOz-_VdaD_Nr_qn7lwGwwkdXdWPw_QJP0veHy8lPuVUTo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-2xl font-bold text-white">Networking</h3>
+<p class="text-white/80 text-sm mt-1">Elegant bars and social spaces.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Rated Venues -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-10">
+<div>
+<h2 class="text-3xl font-bold text-on-surface tracking-tight">Top Rated Venues</h2>
+<p class="text-on-surface-variant mt-2">Verified spaces with exceptional service and reviews.</p>
+</div>
+<button class="text-primary font-semibold flex items-center gap-1 hover:underline">
+                        View All <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="stunning rooftop pool deck with modern white cabanas and panoramic city skyline view at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3nQt9TGlrKwl6I1ek04MGksU-vlQrz_h4S1fIGJOZGRvJS_k1puCTSQlUrK0yeDMh4InVa0j7laXtldJ12ooyQiILTsBubDIPSOnGeQpeQk3AfNveY-rDltEGPhe5BKaPGJfA4SEUR3NvXbavtx1Q0afPwafwXuHbVKzL_LfW-C_wjMp6EHt2y3FMzR0o0x8qDGxKQczw4gTz5ETD8suTR9Yxc3waK6kPAFX-rAhPbb7N9QgGQLlr0jBaH9Kz27SWpPuBoHIwYHo"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                                4.9 (124 reviews)
+                            </div>
+<button class="absolute top-4 right-4 bg-white/20 backdrop-blur p-2 rounded-full text-white hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-on-surface">Skyline Horizon Loft</h3>
+<span class="text-primary font-bold">$1,200/hr</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span> 150 Pax
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Manhattan, NY
+                                </span>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-on-secondary-container font-semibold rounded-lg hover:bg-secondary-container/30 transition-colors">Check Availability</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="cozy rustic barn venue with exposed wooden beams, hanging lantern lights, and charming vintage decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp4UVcRK_3n1szmB05oX3_uIiEiKn-iydcxqnNeLwS1DG_ScTPGeu9a2O3VUhjW5C7QVi6CbrJDo_Q9lPxo2mRDY92pMNbAVeau1mJb9FImSfTcYb7Jv1rR4d828kJ66pnX-P2u4o2haKkSypeDIoohL8qvGLeKQPEA0uHbXscAFyIwhJRxVjeazfw6-lP3WIlGj3nwcE7PlEJnrK5-5v-Zzk1pp-k2k3_eC2C1R96HdGL4jr0SvYBKc3hc4ZEJKI9RaRJOw-QNxM"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                                4.8 (89 reviews)
+                            </div>
+<button class="absolute top-4 right-4 bg-white/20 backdrop-blur p-2 rounded-full text-white hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-on-surface">The Heritage Barn</h3>
+<span class="text-primary font-bold">$850/hr</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span> 300 Pax
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Napa Valley, CA
+                                </span>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-on-secondary-container font-semibold rounded-lg hover:bg-secondary-container/30 transition-colors">Check Availability</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="industrial chic event space with high ceilings, large windows, polished concrete floors, and exposed brick walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA3dUFgi2ltcJiIreF4uZCOnc_9ZreCyJPHCNkkbMdJd62yBKG7Liz4qCk8JIBh0GjYeUWvJy10wXlyh9ykjacSxrX_z0KZRgYSW48He__QMRiPUrH4f6R57wQGfDT7L4LF3gHBrJWzFu4ZH6S_bn6-Sa6h6KB6oLiR2lF91nrIJETzsTRjYoSGLD3HUMynYiJeVwqkiJFuXcO2mv6qqkPU4w_-OfqTis1RyuraPTiBf69aYReI6hBBmsxAd7TCrhKH3LdS8xNQkw"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                                5.0 (42 reviews)
+                            </div>
+<button class="absolute top-4 right-4 bg-white/20 backdrop-blur p-2 rounded-full text-white hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-on-surface">Industrial Flux Lab</h3>
+<span class="text-primary font-bold">$600/hr</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mb-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">groups</span> 80 Pax
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Brooklyn, NY
+                                </span>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-on-secondary-container font-semibold rounded-lg hover:bg-secondary-container/30 transition-colors">Check Availability</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Listings -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="flex items-center justify-between mb-10">
+<div>
+<h2 class="text-3xl font-bold text-on-surface tracking-tight">New Listings</h2>
+<p class="text-on-surface-variant mt-2">Discover the latest spaces added to our network.</p>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto pb-8 no-scrollbar -mx-6 px-6">
+<!-- Tiny Card 1 -->
+<div class="min-w-[280px] bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary p-4 hover:shadow-md transition-all cursor-pointer">
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="contemporary art gallery space with minimalist white walls and track lighting highlighting colorful abstract paintings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2fu-E6DRNdfSd1BjOJlThGwjtmOATu2ojoIrakPsmuwncX07Ph74bMLz13PybeNH1l4t9pvhlEWt6JswZNRGdG3dAFEyQU_ktfMU7Yop57dRwo9fI3biA8r7sRNQfn2wENDLj2bZRVuaiBBuIN-yb_dNrqvWx5dNPwWH5cpdg3Gih8M4HVcoqXg_Aad8ETuDk0zYkc0iQD007B8PbawcRvBjsdMfHJYYu-_NTPwnUE8cq8mVAir0jja0kmPXBmi73unVGHThD_ZU"/>
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-bold text-primary bg-primary-fixed px-2 py-0.5 rounded">NEW</span>
+<span class="text-xs font-semibold text-on-surface-variant">Gallery</span>
+</div>
+<h4 class="font-bold text-on-surface">Azure Art Hub</h4>
+<p class="text-xs text-on-surface-variant mt-1">London, UK • 50 Pax</p>
+</div>
+<!-- Tiny Card 2 -->
+<div class="min-w-[280px] bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-tertiary p-4 hover:shadow-md transition-all cursor-pointer">
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="luxury yacht deck at sunset with comfortable outdoor seating and sparkling ocean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-m8eF-RfE8mcTUZBDhy6vBe0RcshYy8drcRTrUMppuQ50KiPlwTVWqlVuS4DvMSntYFhINwFH29JbcfjiSmCRml_r5ERYNKESbNPJFJuAt0X_JkA2AMvwPOBBXgYJ1Ugf8p1imfT0ShEg6BhxWmHKXy08QoKDO-uQeTpeehVDxPFBUbuKyM6YIQ1shoiFeoGeSOHo7c9mAOatW8dH4RcXLKeHSI-brpCUHAy8FMEJB5-1_YDtPgUNQozQajm3xU_QF6COiOXHZy8"/>
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-bold text-primary bg-primary-fixed px-2 py-0.5 rounded">NEW</span>
+<span class="text-xs font-semibold text-on-surface-variant">Waterfront</span>
+</div>
+<h4 class="font-bold text-on-surface">The Pearl Yacht</h4>
+<p class="text-xs text-on-surface-variant mt-1">Miami, FL • 30 Pax</p>
+</div>
+<!-- Tiny Card 3 -->
+<div class="min-w-[280px] bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-secondary p-4 hover:shadow-md transition-all cursor-pointer">
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="clean bright shared office space with sleek white desks and modern minimalist chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFMcfIFJFOZNRMVMMwpHHLLWH56P_wL66vGRFUSqaDg2TVDD_sRR8WwqNC-rBREnzOD8HOkXWHFLtEYv1AFwjgpJljRvRL8oeDzAytMRGu0bTZ4abth0fY9qXTG_ZWRxlOU_lUmXpQOpxHEYMFnoVfKSu-Hz_6vaRI7Chq2dQaNupj04HUID7FAiLQ4eaJFcId1TV4HQz1TgUfHX5VGHNKQiHJ99CiUjzv6w-3mxtTkGhHwu37Bwl2RCQsZSmCryjtTOSCrTfzKg8"/>
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-bold text-primary bg-primary-fixed px-2 py-0.5 rounded">NEW</span>
+<span class="text-xs font-semibold text-on-surface-variant">Office</span>
+</div>
+<h4 class="font-bold text-on-surface">Nexus Work Pods</h4>
+<p class="text-xs text-on-surface-variant mt-1">Austin, TX • 12 Pax</p>
+</div>
+<!-- Tiny Card 4 -->
+<div class="min-w-[280px] bg-surface-container-lowest rounded-xl shadow-sm border-l-4 border-primary p-4 hover:shadow-md transition-all cursor-pointer">
+<img class="w-full h-32 object-cover rounded-lg mb-4" data-alt="grand library with tall mahogany bookshelves, rolling ladders, and leather armchairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyVZmEizA425gGS1Fwxgk4Oha9T_clHqWvLt4pSvav_m58VFp18A-l_MJ7IRNDg0WjR_-vkCRDETiOlyMS5hRTYBcJ1Cnz6eo6aYzUJ3n7Xvrncn2kCec8-nVVH3C9gSi_8woMkaysLQdlA28vArAWQp7Eo49WmsBw4bEmGphE4mUGzPkE62zgIkg02GpiIileixtiyKTxXHzmgnzJvMNI0dEKnkKo7CdmUIsYA6AwsL-p6gqv9IBPpyHz--IY9JbLi81xVH4UAWM"/>
+<div class="flex items-center justify-between mb-1">
+<span class="text-xs font-bold text-primary bg-primary-fixed px-2 py-0.5 rounded">NEW</span>
+<span class="text-xs font-semibold text-on-surface-variant">Historic</span>
+</div>
+<h4 class="font-bold text-on-surface">Old Oak Library</h4>
+<p class="text-xs text-on-surface-variant mt-1">Boston, MA • 40 Pax</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="bg-primary rounded-3xl p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 max-w-xl">
+<h2 class="text-4xl font-bold text-white mb-4">Have a unique space to share?</h2>
+<p class="text-white/80 text-lg">Join thousands of venue owners and start earning today. Our platform makes management simple.</p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-white text-primary font-bold rounded-xl hover:shadow-lg transition-all active:scale-95">List Your Venue</button>
+<button class="px-8 py-4 bg-primary-container text-white font-bold rounded-xl hover:bg-primary-container/80 transition-all border border-white/20">Learn More</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto font-manrope text-xs">
+<div class="mb-8 md:mb-0">
+<span class="font-semibold text-slate-900 dark:text-white text-base block mb-2">Azure Horizon</span>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs">© 2024 Azure Horizon Venue Booking. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<div class="flex flex-col gap-2">
+<span class="font-bold text-on-surface text-sm">Company</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Site Map</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-bold text-on-surface text-sm">Legal</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-bold text-on-surface text-sm">Social</span>
+<div class="flex gap-4">
+<button class="material-symbols-outlined text-slate-500 hover:text-primary transition-colors">public</button>
+<button class="material-symbols-outlined text-slate-500 hover:text-primary transition-colors">alternate_email</button>
+<button class="material-symbols-outlined text-slate-500 hover:text-primary transition-colors">share</button>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+```</body></html>

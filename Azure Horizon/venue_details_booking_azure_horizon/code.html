@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Azure Horizon | The Grand Plaza Ballroom</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d8e2ff",
+                    "on-tertiary-container": "#0e0200",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#004493",
+                    "on-secondary-container": "#3d5481",
+                    "primary-container": "#1a73e8",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-dim": "#d8dadc",
+                    "on-surface": "#191c1e",
+                    "tertiary-container": "#c55500",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed-variant": "#2e4673",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#eceef0",
+                    "surface-tint": "#005bc0",
+                    "inverse-primary": "#adc7ff",
+                    "outline": "#727785",
+                    "tertiary": "#9e4300",
+                    "on-primary-container": "#ffffff",
+                    "on-tertiary-fixed": "#341100",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed-variant": "#783100",
+                    "secondary-container": "#b2c9fe",
+                    "on-primary": "#ffffff",
+                    "primary": "#005bbf",
+                    "outline-variant": "#c1c6d6",
+                    "background": "#f7f9fb",
+                    "inverse-surface": "#2d3133",
+                    "secondary-fixed-dim": "#afc7fb",
+                    "surface": "#f7f9fb",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#414754",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#adc7ff",
+                    "tertiary-fixed-dim": "#ffb691",
+                    "on-background": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "on-error": "#ffffff",
+                    "secondary": "#475e8c",
+                    "tertiary-fixed": "#ffdbcb",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed": "#001a41",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e0e3e5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .glass-nav { backdrop-filter: blur(24px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .shadow-ambient { shadow: 0px 12px 32px rgba(25, 28, 30, 0.06); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm font-manrope">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tight text-blue-800 dark:text-blue-300">Azure Horizon</span>
+<nav class="hidden md:flex items-center space-y-0 space-x-6">
+<a class="text-blue-700 dark:text-blue-400 font-semibold border-b-2 border-blue-600 transition-colors" href="#">Explore</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#">How it Works</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#">List Your Venue</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-lg font-semibold active:scale-95 duration-200">Login</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-16 px-6 max-w-7xl mx-auto">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 mb-6 text-on-surface-variant text-sm font-label">
+<span>Venues</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span>Metropolitan Center</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="font-bold text-on-surface">The Grand Plaza Ballroom</span>
+</div>
+<!-- Hero Bento Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[500px] mb-12">
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="luxury hotel ballroom with high ceilings, gold accents, sparkling crystal chandeliers, and polished dark wood floors in soft evening light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGhNpdzbOCiA4JQu81fljmoRY3rC09vtsHepuvlnS8VqkKNoT_JzNN4iaOp71zmWUjxuSxkRT_HgalGBfHu3DJSDFzyBY6vBpUH-O6b0V6PuhJ9Uvp_FfKMiOH4j66-8PPL1Iu7DQpJZZk5Cuqkq0MdwJJHyySpkoOxj6A9ucK62mUuNuGkOlOQmSbdmMYvfHnJhu4xkdfGQF8zpJSVEG2hTaja_Sr0EWeOm5aWfjwN9Cv7rjuRPf_k5KCmC80b8H7_ZhxMVRuRFs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<div class="rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of elegant dining setup at a gala with white linens, silver cutlery, and white floral centerpiece" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzX9kfIVcgiPynxf01n_FGo0DCWklOmbBAJNW7Sz4X6MUxTF7Qz6IXU6bGSGcgAlfvND2xxupWZHolU5khTo8kEFqok24JEkp6IZHpaRIsvEm3ITvjwOL80xe7Ygp6LM0U0_KPSTVYNCfWk-lFFhtxd2Knr6p99S-abyoG5z1aFWu1sCzLQC7gXDuxAAGguC6u1l1IhF9XfiXu5vx0dR6KgFQqK0RusuCrj7KRXAWaNp-E3N223d7hWBNb7GH6StuhhY60JEIkL6o"/>
+</div>
+<div class="rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="wide shot of modern event stage with professional blue stage lighting and large digital screens in a spacious venue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjf_eTccHaW5m7WM_l96RSwHAY7lWJio--Rog5niz37YpRnQXJq11-ozXKW6GVVMrJjNrzcwfic3JWEgOYJzD5ZgFXgMfRstmdR8oa6k11mssR6Z6Ymha23OWmNpcnDXzZ1KFhuEE1Jd_LrfpZ5BQ0ArO3Zj47zgCsWm2CL3twnfkVmE4IEe5Mx45xVIAGlY5FK1CmR2Pg6LBFOv2cDd0iEiNCdnOhzDUc1tpDRxaeUX9K3eCZMQyI3LmbzuxoExBQB7MUHFeXue4"/>
+</div>
+<div class="md:col-span-2 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="spacious bright atrium with glass ceiling and cocktail tables prepared for a professional networking event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4zvMGxBiir7V-Sv2KsObMDv_IHM9PxiWODO-Em4iorktDlaaqKCuxPvoBD8K1-CfYYgT-D8fkwNkC8iFBMO3dWUOEK5yL6J5l4hQdxtEs0x1hLlHwm8z4aBerx7R_f5_jFkPRLB3N3h0BtVCDXuJ-iWxKBvzSTkMqHCBh7EZF8CZXd1Fb1N8fh5EjJenyLvkHuGFjNiTXfzwjMdJ_GeA0_eQyQDL4-1Fr1XOexXj09yY9XThSoCYnmLTGDVtQLijVDWtoWMxGl1U"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-sm">grid_view</span> View All Photos
+                </button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Left: Venue Information -->
+<div class="lg:col-span-2 space-y-12">
+<section>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-on-surface">The Grand Plaza Ballroom</h1>
+<div class="flex items-center gap-4 text-on-surface-variant mb-6">
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-full text-xs font-semibold">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                            Upper East Side, New York
+                        </div>
+<div class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-full text-xs font-semibold">
+<span class="material-symbols-outlined text-sm text-primary">star</span>
+                            4.9 (124 Reviews)
+                        </div>
+</div>
+<p class="text-on-surface-variant leading-relaxed max-w-3xl">
+                        Experience unparalleled elegance at The Grand Plaza Ballroom. Situated in the heart of the city, our flagship venue combines classic architectural heritage with modern technical capabilities. Perfect for high-end galas, corporate summits, and unforgettable celebrations, the space features a double-height ceiling and bespoke acoustics.
+                    </p>
+</section>
+<!-- Technical Specs Bento -->
+<section>
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span> Venue Specifications
+                    </h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">groups</span>
+<div class="text-xs font-label text-on-surface-variant">Capacity</div>
+<div class="text-lg font-bold">500 Guests</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">square_foot</span>
+<div class="text-xs font-label text-on-surface-variant">Total Area</div>
+<div class="text-lg font-bold">12,500 sq ft</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">height</span>
+<div class="text-xs font-label text-on-surface-variant">Ceiling Height</div>
+<div class="text-lg font-bold">24 ft</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">wifi</span>
+<div class="text-xs font-label text-on-surface-variant">Connectivity</div>
+<div class="text-lg font-bold">1Gbps Fiber</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">restaurant</span>
+<div class="text-xs font-label text-on-surface-variant">Catering</div>
+<div class="text-lg font-bold">Full Kitchen</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-ambient">
+<span class="material-symbols-outlined text-primary-container mb-2">door_open</span>
+<div class="text-xs font-label text-on-surface-variant">Loading</div>
+<div class="text-lg font-bold">Street Level</div>
+</div>
+</div>
+</section>
+<!-- Amenities -->
+<section>
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">feature_search</span> Amenities &amp; Services
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">State-of-the-art Sound System</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">Programmable LED Lighting</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">Private Bridal/Green Room</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">Valet Parking Available</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">Integrated AV Projection</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="bg-primary-fixed p-2 rounded-lg"><span class="material-symbols-outlined text-primary">check_circle</span></div>
+<span class="font-medium">ADA Compliant Access</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right: Booking Form -->
+<aside class="relative">
+<div class="sticky top-28 bg-surface-container-lowest p-8 rounded-2xl shadow-xl border border-outline-variant/15">
+<h3 class="text-2xl font-bold mb-2">Reserve Venue</h3>
+<p class="text-on-surface-variant text-sm mb-8">Select your preferred date and time to check availability.</p>
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest font-label">Event Date</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">calendar_today</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container text-sm font-medium" type="date"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest font-label">Start Time</label>
+<select class="w-full py-3 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container text-sm font-medium">
+<option>09:00 AM</option>
+<option>12:00 PM</option>
+<option>03:00 PM</option>
+<option>06:00 PM</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest font-label">End Time</label>
+<select class="w-full py-3 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container text-sm font-medium">
+<option>02:00 PM</option>
+<option>05:00 PM</option>
+<option>08:00 PM</option>
+<option>11:00 PM</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest font-label">Expected Guest Count</label>
+<input class="w-full px-4 py-3 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container text-sm font-medium" placeholder="e.g. 250" type="number"/>
+</div>
+<div class="pt-4 border-t border-surface-container">
+<div class="flex justify-between items-center mb-6">
+<div>
+<div class="text-sm font-semibold">Starting at</div>
+<div class="text-2xl font-extrabold text-primary">$4,500<span class="text-sm font-medium text-on-surface-variant">/day</span></div>
+</div>
+<div class="text-right">
+<div class="text-xs font-label text-on-surface-variant">Response Time</div>
+<div class="text-sm font-bold">&lt; 24 Hours</div>
+</div>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-xl font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all" type="submit">
+                                Submit Booking Request
+                            </button>
+<p class="text-center text-xs text-on-surface-variant mt-4">You won't be charged yet</p>
+</div>
+</form>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-slate-50 dark:bg-slate-950 font-manrope text-xs border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+<span class="font-semibold text-slate-900 dark:text-white text-base">Azure Horizon</span>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs text-center md:text-left">The leading platform for finding and booking premier venues for any occasion.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Site Map</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Contact Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-slate-500 dark:text-slate-400">© 2024 Azure Horizon Venue Booking. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
